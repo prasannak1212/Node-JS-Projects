@@ -6,6 +6,6 @@ const productControllers = new productController()
 
 server.get('/', productControllers.getProducts);
 
-server.use(express.static('src/views'))
+server.use(express.static('src/views/'))
 
 server.listen(5000, ()=>console.log('Server is Listening at 5000...'));
